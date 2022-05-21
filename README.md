@@ -1,5 +1,7 @@
 # 21 My MERN: Book Search Engine
 
+![Screenshot of APP](./Assets/sample-app.jpg)
+
 ## Links
 - [HEROKU deployment](https://googlebooks-search-mern-app.herokuapp.com/)
 - [GitHub Repo](https://github.com/MiinoSil/22-HW-MERN-GOOGLE-BOOK-SEARCH-GIT)

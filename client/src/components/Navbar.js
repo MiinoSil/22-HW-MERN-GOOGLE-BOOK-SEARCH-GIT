@@ -12,7 +12,7 @@ const AppNavbar = () => {
 
   return (
     <>
-      <Navbar bg='light' variant='dark' expand='lg'>
+      <Navbar bg='dark' variant='dark' expand='lg'>
         <Container fluid>
           <Navbar.Brand as={Link} to='/'>
             Google Books Search
@@ -29,7 +29,7 @@ const AppNavbar = () => {
                   <Nav.Link as={Link} to='/saved'>
                     See Your Books
                   </Nav.Link>
-                  
+
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                 </>
               ) : (

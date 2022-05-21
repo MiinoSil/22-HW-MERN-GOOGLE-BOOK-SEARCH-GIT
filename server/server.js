@@ -1,29 +1,24 @@
 const express = require('express');
-const path = require('path');
-const db = require('./config/connection');
-
 // Import Apollo Server
 const { ApolloServer } = require('apollo-server-express')
+const path = require('path');
 
 // Import schemas
 const { typeDefs, resolvers } = require('./schemas');
 
 // call Middleware
 const { authMiddleware } = require('./utils/auth');
-
-const app = express();
+const db = require('./config/connection');
 
 // Set port access for localhost and Heroku
 const PORT = process.env.PORT || 3001;
+const app = express();
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: authMiddleware,
 });
-
-// Trying to use Apollo Server 3
-// await server.start();
 
 server.applyMiddleware({ app });
 

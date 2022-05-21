@@ -1,7 +1,7 @@
 {
   "name": "21-mern-googlebooks-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A google books search app following MERN stack formatting",
   "main": "server/server.js",
   "homepage": "",
   "scripts": {
@@ -17,6 +17,6 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "apollo-server-express": "^3.7.0"
+    "apollo-server-express": "^2.15.0"
   }
 }
